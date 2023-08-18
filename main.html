@@ -29,7 +29,7 @@
 				font-size: 20px;
 			}
 			.large {
-				font-size: 40px;
+				font-size: 36px;
 			}
 			.bold {
 				font-weight: bold;
@@ -68,17 +68,21 @@
 		</style>
 		<script>
 			function main() {
-				document.getElementById("inner").innerHTML = "<br>" +
-				"<font class='white do_hyeon large'>Welcome!</font><br><br>" +
-				"<font style='font-size: 25px;' class='white nanum_gothic'>to My Homepage</font>"
+				document.getElementById("inner").innerHTML = "<p class='white'>" +
+				"<span class='do_hyeon large'>Welcome!</span><br><br>" +
+				"<span class='nanum_gothic'>to My Homepage</span>" +
+				"</p>"
 			}
 			function info() {
-				document.getElementById("inner").innerHTML = "<p class='white jua large'>Master Server (Since 2018. 12. 04.)</p>" +
-				"<p class='white nanum_gothic small'>주소: masterhp.kro.kr</p>" +
-				"<p class='white nanum_gothic' style='font-size: 15px;'>버전: 1.20.1</p>"
+				document.getElementById("inner").innerHTML = "<p class='white'>" +
+				"<span class='jua large'>Master Server (Since 2018. 12. 04.)</span><br><br>" +
+				"<span class='nanum_gothic small'>주소: masterhp.kro.kr</span><br><br>" +
+				"<span class='nanum_gothic' style='font-size: 15px;'>버전: 1.20.1</span>" +
+				"</p>"
 			}
 			function project() {
-				document.getElementById("inner").innerHTML = "<p class='white jua large'>진행 중인 프로젝트 소개</p>" +
+				document.getElementById("inner").innerHTML = "<p class='white'>" +
+				"<span class='jua large'>진행 중인 프로젝트 소개</span><br><br>" +
 				"<table class='no_border' cellpadding='10'>" +
 				"<tr><td style='padding-left: 0px; width: 100px; height: 100px;' rowspan='2'>" +
 				"<img src='MasterHP03.png' width='100' height='100'></td>" +
@@ -90,10 +94,13 @@
 				"<td class='white jua' style='font-size: 36px; vertical-align: middle;'>MasteryBox</td></tr>" +
 				"<tr><td class='white nanum_gothic' style='vertical-align: middle; padding: 0px 10px 20px;'>" +
 				"Sub Application to be linked with data of MasterBot, and has exclusive feature: Mystery Box.</td></tr>" +
-				"</table>"
+				"</table>" +
+				"</p>"
 			}
 			function file() {
-				document.getElementById("inner").innerHTML = "<p class='white jua large'>마스터 파일 보관소</p>"
+				document.getElementById("inner").innerHTML =  "<p class='white'>" +
+				"<span class='jua large'>마스터 파일 보관소</span>" +
+				"</p>"
 			}
 		</script>
 	</head>
@@ -101,7 +108,7 @@
 	<body bgcolor="#35363A">
 		<div style="width: 80%; position: absolute; left: 10%; top: 2%;">
 			<img style="float: left; width: 100px; height: 100px; padding: 0px 0px;" src="MasterHP03.png">
-			<p class="white jua" style="vertical-align: middle; font-size: 40px; margin: 0; padding: 10px 110px;">MasterHP03</p>
+			<p class="white do_hyeon" style="vertical-align: middle; font-size: 40px; margin: 0; padding: 10px 110px 5px;">MasterHP03</p>
 			<p class="white nanum_gothic" style="vertical-align: middle; font-size: 24px; margin: 0; padding-left: 110px;">Page of MasterHP03</p>
 			<br>
 			<div>
@@ -112,6 +119,7 @@
 					<li style="width: 25%; margin: 0 -1px;" valign="middle" align="center" onmousedown="file()">Files</li>
 				</ul>
 			</div>
+			<br>
 			<div id="inner" style="margin: 0; padding: 0 0 0 25px;">
 				<script>main()</script>
 			</div>
